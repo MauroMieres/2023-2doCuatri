@@ -79,4 +79,16 @@ echo "<br>";
 
 echo "Auto 5:" . "<br>";
 Auto::MostrarAuto($auto5);
+
+echo "--------------------" ."<br>";
+echo "Aplicación 19" ."<br>";
+echo "Guardar autos en el CSV:" ."<br>";
+
+Auto::altaAuto("Toyota Yaris GR","Rojo",75000,date("d/m/Y"));
+Auto::altaAuto("Volkswagen POLO","Azul",65000,date("d/m/Y"));
+
+echo "<br>" . "Leer autos cargados en el CSV:"."<br>";
+
+Auto::leerAutos("autos.csv");
+
 ?>
